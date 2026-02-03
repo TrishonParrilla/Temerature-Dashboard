@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+
+   background:linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+   width:100%;
+   height:100vh;
+   font-family:"SN Pro"
+}
+
+.main-container {
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    gap:5em;
+    justify-content: center;
+    align-items: center;
+    margin: 20em auto;
+}
+
+.title-temp-convert {
+    margin-bottom:2.5em;
+}
+.temp-converter {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background:white;
+    width:25%;
+    padding: 10em 0;
+    border-radius:8px;
+    
+}
+
+.button-flex {
+    display: flex;
+    gap:1em;;
+}
+
+.button-flex button {
+    border:none;
+    color:black;
+    background:linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+    padding:.5em;
+    border-radius:8px;
+    cursor:pointer;
+    font-family:"SN Pro", sans-serif;
+    font-size:1em;
+    margin-top:3em;
+    transition: ease-in-out 300ms;
+}
+
+.button-flex button:hover {
+    transform:translateY(-5px);
+    box-shadow: 3px 3px 10px black;
+    transition:ease-out 150ms;
+}
+
+.button-flex button:active {
+    transform:translateY(0px);
+}
+
+#temp-converter-temp{ /* input */
+    padding:.9em;
+    border:none;
+    border-radius:5px;
+    background:linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+
+#temp-converter-temp::placeholder{  /* ::placeholder changes the placeholder text inside the input box */
+    text-align: center;
+    color:rgb(0,0,0,0.7);
+    font-family:"SN Pro",sans-serif;
+    
+}
+
+#temp-converter-temp:hover {
+    box-shadow: 3px 3px 10px black;
+
+}
+
+#convert-result {
+    text-align:center;
+}
+
+.convert-result-container {
+    min-width:30%;
+    margin-top:3em;
+    padding:.5em;
+    border-radius:8px;
+    background:#f4f4f9;
+    border:2px #515ada solid;
+    
+}
+
