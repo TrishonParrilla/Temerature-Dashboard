@@ -33,6 +33,7 @@ body{
     width:25%;
     padding: 10em 0;
     border-radius:8px;
+    box-shadow:5px 5px 10px black;
     
 }
 
@@ -69,13 +70,13 @@ body{
     border:none;
     border-radius:5px;
     background:linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+    text-align: center;
 }
 
 #temp-converter-temp::placeholder{  /* ::placeholder changes the placeholder text inside the input box */
     text-align: center;
     color:rgb(0,0,0,0.7);
     font-family:"SN Pro",sans-serif;
-    
 }
 
 #temp-converter-temp:hover {
