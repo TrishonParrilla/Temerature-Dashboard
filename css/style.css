@@ -91,12 +91,52 @@ body{
 
 .convert-result-container {
     min-width:30%;
+    min-height:4%;
     margin-top:3em;
     padding:.5em;
     border-radius:8px;
     background:#f4f4f9;
     border:2px #515ada solid;
     
+}
+.thermometer-empty{
+    margin-top:1em;
+    margin-bottom:0.5em;
+    border:1px solid black;
+    height:40%;
+    width:5%;
+    border-radius:30px;
+    box-shadow:3px 0px 1px black;
+}
+
+.thermometer-hot {
+    margin-top:1em;
+    margin-bottom:0.5em;
+    border:1px solid black;
+    height:40%;
+    width:5%;
+    border-radius:30px;
+    background:linear-gradient(to top,#FF0000 60%, #f4f4f4 75%)
+}
+
+.thermometer-hottest {
+    margin-top:1em;
+    margin-bottom:0.5em;
+    border:1px solid black;
+    height:40%;
+    width:5%;
+    border-radius:30px;
+    background:linear-gradient(to top,#FF0000 60%);
+}
+
+.thermometer-mid {
+    margin-top:1em;
+    margin-bottom:0.5em;
+    border:1px solid black;
+    height:40%;
+    width:5%;
+    border-radius:30px;
+    background:linear-gradient(to top,#FF0000, #f4f4f4 50%);
 }
 
 .conversion-table-flex {

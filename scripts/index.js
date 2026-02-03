@@ -1,9 +1,28 @@
 function convertToFahrenheit() {
     userValue = document.getElementById("temp-converter-temp").value;
     userValue = (userValue * 9/5) + 32;
-    conversionOutput = document.getElementById("convert-result")
+    conversionOutput = document.getElementById("convert-result");
     conversionOutput.innerHTML=(`${userValue}`);
-
+    const thermometerStyle = document.getElementById("thermometer");
+        thermometerStyle.classList.remove("thermometer-hot");
+        thermometerStyle.classList.remove("thermometer-hottest");
+        thermometerStyle.classList.remove("thermometer-mid");
+        if(userValue>70 && userValue < 100) {
+            thermometerStyle.classList.remove("thermometer-hot");
+            thermometerStyle.classList.add("thermometer-hot");
+            
+        }
+        else if (userValue > 100) {
+            thermometerStyle.classList.remove("thermometer-hottest");
+            thermometerStyle.classList.add("thermometer-hottest");
+            
+        }        
+        else if (userValue <= 70 ) {
+            thermometerStyle.classList.remove("thermometer-mid");
+            thermometerStyle.classList.add("thermometer-mid");
+            
+        }
+    
 }
 
 function convertToCelsius() {
