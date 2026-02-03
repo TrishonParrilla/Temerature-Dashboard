@@ -7,7 +7,7 @@ body{
 
    background:linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
    width:100%;
-   height:100vh;
+   min-height:100vh;
    font-family:"SN Pro"
 }
 
@@ -19,6 +19,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: 20em auto;
+    flex-wrap:wrap;
 }
 
 .title-temp-convert {
@@ -31,7 +32,7 @@ body{
     justify-content: center;
     background:white;
     width:25%;
-    padding: 10em 0;
+    height:40vh;
     border-radius:8px;
     box-shadow:5px 5px 10px black;
     
@@ -97,4 +98,70 @@ body{
     border:2px #515ada solid;
     
 }
+
+.conversion-table-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background:white;
+    width:25%;
+    height:80vh;
+    border-radius:8px;
+    box-shadow:5px 5px 10px black;
+}
+
+.conversion-table-flex button {
+    border:none;
+    color:black;
+    background:linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+    padding:.5em;
+    border-radius:8px;
+    cursor:pointer;
+    font-family:"SN Pro", sans-serif;
+    font-size:1em;
+    margin-top:3em;
+    margin-bottom:2em;
+    transition: ease-in-out 300ms;
+
+}
+
+.conversion-table-flex button:hover {
+    transform:translateY(-5px);
+    box-shadow: 3px 3px 10px black;
+    transition:ease-out 150ms;
+
+}
+
+.conversion-table-flex button:active {
+    transform:translateY(0px);
+}
+
+#conversionTable th, td, tr{
+    border:1px #515ada solid;
+    padding:.2em;
+
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        gap: 2em;
+        margin: 2em auto;
+    }
+
+    .temp-converter, .conversion-table-flex {
+        width: 90vw;
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 769px) {
+    .temp-converter, .conversion-table-flex {
+        width: 25%;
+    }
+}
+
+
 
