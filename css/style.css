@@ -163,5 +163,19 @@ body{
     }
 }
 
+@media (min-width: 1440px) {
+    .main-container {
+        gap: 8em;
+    }
+
+    .temp-converter, .conversion-table-flex {
+        width: 20%;
+    }
+
+    .conversion-table-flex {
+        height: 60vh;
+    }
+}
+
 
 
