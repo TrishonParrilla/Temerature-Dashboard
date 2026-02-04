@@ -55,7 +55,7 @@ function convertToCelsius() {
 
 function conversionTable() {
         let fahrenheitInsert = document.getElementById("conversionTable");
-        if (fahrenheitInsert.innerHTML.trim() !== "") {
+        if (fahrenheitInsert.innerHTML !== "") {
         fahrenheitInsert.innerHTML = "";
         return
     }
